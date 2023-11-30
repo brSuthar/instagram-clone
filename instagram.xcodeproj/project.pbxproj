@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		9D2B7B232B18ECC4003097AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B7B222B18ECC4003097AA /* AppDelegate.swift */; };
 		9D2B7B252B18ECC4003097AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B7B242B18ECC4003097AA /* SceneDelegate.swift */; };
-		9D2B7B272B18ECC4003097AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B7B262B18ECC4003097AA /* ViewController.swift */; };
+		9D2B7B272B18ECC4003097AA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B7B262B18ECC4003097AA /* HomeViewController.swift */; };
 		9D2B7B2A2B18ECC4003097AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2B7B282B18ECC4003097AA /* Main.storyboard */; };
 		9D2B7B2C2B18ECC5003097AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D2B7B2B2B18ECC5003097AA /* Assets.xcassets */; };
 		9D2B7B2F2B18ECC5003097AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2B7B2D2B18ECC5003097AA /* LaunchScreen.storyboard */; };
+		9D2B7B3C2B18F441003097AA /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B7B3B2B18F441003097AA /* ExploreViewController.swift */; };
+		9D2B7B3E2B18F45B003097AA /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B7B3D2B18F45B003097AA /* CameraViewController.swift */; };
+		9D2B7B402B18F471003097AA /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B7B3F2B18F471003097AA /* NotificationViewController.swift */; };
+		9D2B7B422B18F489003097AA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B7B412B18F489003097AA /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D2B7B1F2B18ECC4003097AA /* instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2B7B222B18ECC4003097AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D2B7B242B18ECC4003097AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9D2B7B262B18ECC4003097AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D2B7B262B18ECC4003097AA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9D2B7B292B18ECC4003097AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D2B7B2B2B18ECC5003097AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D2B7B2E2B18ECC5003097AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D2B7B302B18ECC5003097AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D2B7B3B2B18F441003097AA /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		9D2B7B3D2B18F45B003097AA /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		9D2B7B3F2B18F471003097AA /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		9D2B7B412B18F489003097AA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		9D2B7B212B18ECC4003097AA /* instagram */ = {
 			isa = PBXGroup;
 			children = (
-				9D2B7B222B18ECC4003097AA /* AppDelegate.swift */,
-				9D2B7B242B18ECC4003097AA /* SceneDelegate.swift */,
-				9D2B7B262B18ECC4003097AA /* ViewController.swift */,
-				9D2B7B282B18ECC4003097AA /* Main.storyboard */,
-				9D2B7B2B2B18ECC5003097AA /* Assets.xcassets */,
-				9D2B7B2D2B18ECC5003097AA /* LaunchScreen.storyboard */,
+				9D2B7B392B18ECEB003097AA /* Resources */,
+				9D2B7B382B18ECE2003097AA /* Controller */,
+				9D2B7B372B18ECDB003097AA /* View */,
+				9D2B7B362B18ECD1003097AA /* Modal */,
 				9D2B7B302B18ECC5003097AA /* Info.plist */,
 			);
 			path = instagram;
+			sourceTree = "<group>";
+		};
+		9D2B7B362B18ECD1003097AA /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		9D2B7B372B18ECDB003097AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D2B7B3A2B18ED29003097AA /* Storyboards */,
+				9D2B7B2B2B18ECC5003097AA /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D2B7B382B18ECE2003097AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D2B7B262B18ECC4003097AA /* HomeViewController.swift */,
+				9D2B7B3B2B18F441003097AA /* ExploreViewController.swift */,
+				9D2B7B3D2B18F45B003097AA /* CameraViewController.swift */,
+				9D2B7B3F2B18F471003097AA /* NotificationViewController.swift */,
+				9D2B7B412B18F489003097AA /* ProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9D2B7B392B18ECEB003097AA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9D2B7B222B18ECC4003097AA /* AppDelegate.swift */,
+				9D2B7B242B18ECC4003097AA /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9D2B7B3A2B18ED29003097AA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9D2B7B2D2B18ECC5003097AA /* LaunchScreen.storyboard */,
+				9D2B7B282B18ECC4003097AA /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D2B7B272B18ECC4003097AA /* ViewController.swift in Sources */,
+				9D2B7B3C2B18F441003097AA /* ExploreViewController.swift in Sources */,
+				9D2B7B3E2B18F45B003097AA /* CameraViewController.swift in Sources */,
+				9D2B7B402B18F471003097AA /* NotificationViewController.swift in Sources */,
+				9D2B7B272B18ECC4003097AA /* HomeViewController.swift in Sources */,
+				9D2B7B422B18F489003097AA /* ProfileViewController.swift in Sources */,
 				9D2B7B232B18ECC4003097AA /* AppDelegate.swift in Sources */,
 				9D2B7B252B18ECC4003097AA /* SceneDelegate.swift in Sources */,
 			);
