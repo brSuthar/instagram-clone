@@ -54,14 +54,76 @@
                     <view key="view" contentMode="scaleToFill" id="wMc-IN-SB9">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vo8-Ar-Kpd" customClass="AmountView" customModule="instagram" customModuleProvider="target">
+                                <rect key="frame" x="40" y="113" width="313" height="146"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDc-uD-d4Z">
+                                        <rect key="frame" x="84.000000000000014" y="37" width="145.33333333333337" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123xx...44rv" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXe-tj-zRU">
+                                        <rect key="frame" x="109.66666666666666" y="101" width="94" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="r5t-Nq-7yI">
+                                        <rect key="frame" x="97" y="23" width="119.33333333333331" height="14"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hide balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HW5-7I-LQt">
+                                                <rect key="frame" x="0.0" y="0.0" width="99.333333333333329" height="14"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5g0-fF-XlD">
+                                                <rect key="frame" x="105.33333333333334" y="0.0" width="14" height="14"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="14" id="BU1-Ov-bfb"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="eye-ic"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14" id="pj7-zx-8kn"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="uK7-oA-4vf"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.081787489354610443" green="0.33458065986633301" blue="0.27055603265762329" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bXe-tj-zRU" firstAttribute="top" secondItem="kDc-uD-d4Z" secondAttribute="bottom" constant="4" id="4zn-aV-0bt"/>
+                                    <constraint firstItem="bXe-tj-zRU" firstAttribute="centerX" secondItem="Vo8-Ar-Kpd" secondAttribute="centerX" id="Ek0-bq-rQF"/>
+                                    <constraint firstItem="r5t-Nq-7yI" firstAttribute="centerX" secondItem="Vo8-Ar-Kpd" secondAttribute="centerX" id="IMb-Da-n9S"/>
+                                    <constraint firstItem="r5t-Nq-7yI" firstAttribute="top" secondItem="Vo8-Ar-Kpd" secondAttribute="top" constant="23" id="LvC-YJ-62s"/>
+                                    <constraint firstItem="kDc-uD-d4Z" firstAttribute="top" secondItem="r5t-Nq-7yI" secondAttribute="bottom" id="cg6-EF-AyJ"/>
+                                    <constraint firstAttribute="height" constant="146" id="nvk-dM-3eP"/>
+                                    <constraint firstItem="kDc-uD-d4Z" firstAttribute="centerX" secondItem="Vo8-Ar-Kpd" secondAttribute="centerX" id="uq6-VS-lsn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="chd-28-Eln"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vo8-Ar-Kpd" secondAttribute="trailing" constant="24" id="08Y-cQ-hlD"/>
+                            <constraint firstItem="Vo8-Ar-Kpd" firstAttribute="leading" secondItem="wMc-IN-SB9" secondAttribute="leadingMargin" constant="24" id="UhK-Ps-6Si"/>
+                            <constraint firstItem="Vo8-Ar-Kpd" firstAttribute="top" secondItem="wMc-IN-SB9" secondAttribute="topMargin" constant="10" id="vWH-6i-rc6"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AFu-of-QfF"/>
+                    <connections>
+                        <outlet property="address" destination="bXe-tj-zRU" id="F1Q-Yg-AYU"/>
+                        <outlet property="balance" destination="kDc-uD-d4Z" id="sxi-Cf-yiY"/>
+                        <outlet property="hideBalance" destination="HW5-7I-LQt" id="0vo-vm-Lud"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49w-1q-tSj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1875" y="902"/>
+            <point key="canvasLocation" x="-1875.5725190839694" y="901.4084507042254"/>
         </scene>
         <!--Explore View Controller-->
         <scene sceneID="jeQ-2r-Qft">
@@ -199,6 +261,7 @@
     <resources>
         <image name="bell" catalog="system" width="125" height="128"/>
         <image name="camera" catalog="system" width="128" height="93"/>
+        <image name="eye-ic" width="14.333333015441895" height="14"/>
         <image name="globe" catalog="system" width="128" height="123"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="person" catalog="system" width="128" height="121"/>

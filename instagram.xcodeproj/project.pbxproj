@@ -17,6 +17,8 @@
 		9D2B7B3E2B18F45B003097AA /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B7B3D2B18F45B003097AA /* CameraViewController.swift */; };
 		9D2B7B402B18F471003097AA /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B7B3F2B18F471003097AA /* NotificationViewController.swift */; };
 		9D2B7B422B18F489003097AA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B7B412B18F489003097AA /* ProfileViewController.swift */; };
+		9D4819B92B1B1ACA0015EEA1 /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4819B82B1B1ACA0015EEA1 /* AmountView.swift */; };
+		9D4819BB2B1B22FD0015EEA1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4819BA2B1B22FD0015EEA1 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		9D2B7B3D2B18F45B003097AA /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		9D2B7B3F2B18F471003097AA /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		9D2B7B412B18F489003097AA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9D4819B82B1B1ACA0015EEA1 /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
+		9D4819BA2B1B22FD0015EEA1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		9D2B7B372B18ECDB003097AA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9D4819B72B1B1A960015EEA1 /* CustomView */,
 				9D2B7B3A2B18ED29003097AA /* Storyboards */,
 				9D2B7B2B2B18ECC5003097AA /* Assets.xcassets */,
 			);
@@ -106,6 +111,7 @@
 			children = (
 				9D2B7B222B18ECC4003097AA /* AppDelegate.swift */,
 				9D2B7B242B18ECC4003097AA /* SceneDelegate.swift */,
+				9D4819BA2B1B22FD0015EEA1 /* Colors.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -117,6 +123,14 @@
 				9D2B7B282B18ECC4003097AA /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9D4819B72B1B1A960015EEA1 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				9D4819B82B1B1ACA0015EEA1 /* AmountView.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +205,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D2B7B3C2B18F441003097AA /* ExploreViewController.swift in Sources */,
+				9D4819BB2B1B22FD0015EEA1 /* Colors.swift in Sources */,
 				9D2B7B3E2B18F45B003097AA /* CameraViewController.swift in Sources */,
+				9D4819B92B1B1ACA0015EEA1 /* AmountView.swift in Sources */,
 				9D2B7B402B18F471003097AA /* NotificationViewController.swift in Sources */,
 				9D2B7B272B18ECC4003097AA /* HomeViewController.swift in Sources */,
 				9D2B7B422B18F489003097AA /* ProfileViewController.swift in Sources */,
