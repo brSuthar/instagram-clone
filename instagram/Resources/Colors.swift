@@ -5,10 +5,17 @@ class Colors {
     static let raisinBlack: UIColor = UIColor(hex: "#262524")
     static let shark: UIColor = UIColor(hex: "#1F1F20")
     static let alab: UIColor = UIColor(hex: "#FCFCFC")
+    static let tundora: UIColor = UIColor(hex: "#494949")
+    
+    //text colors
+    static let silver: UIColor = UIColor(hex: "#CCCCCC")
+    static let curious_blue: UIColor = UIColor(hex: "#32A1E0")
 }
 
 
 extension UIColor {
+    static let offWhite = UIColor.init(red: 225/255, green: 225/255, blue: 235/255, alpha: 1)
+    
     convenience init(hex: String, alpha: CGFloat = 1.0) {
         var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
         hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")

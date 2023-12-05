@@ -105,12 +105,200 @@
                                     <constraint firstItem="kDc-uD-d4Z" firstAttribute="centerX" secondItem="Vo8-Ar-Kpd" secondAttribute="centerX" id="uq6-VS-lsn"/>
                                 </constraints>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5Tq-De-gIW">
+                                <rect key="frame" x="32" y="283" width="329" height="79"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="feN-dO-vfd">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="79"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4z-3m-gH3" customClass="NeomorphView" customModule="instagram" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTp-6g-s0g">
+                                                        <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="buy-ic"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="rTp-6g-s0g" firstAttribute="top" secondItem="h4z-3m-gH3" secondAttribute="top" id="3vg-r9-sF8"/>
+                                                    <constraint firstAttribute="width" constant="55" id="BAi-Vl-mfg"/>
+                                                    <constraint firstAttribute="height" constant="55" id="ORv-yj-Cwc"/>
+                                                    <constraint firstAttribute="bottom" secondItem="rTp-6g-s0g" secondAttribute="bottom" id="T4b-2s-VDo"/>
+                                                    <constraint firstAttribute="trailing" secondItem="rTp-6g-s0g" secondAttribute="trailing" id="loV-5P-gjo"/>
+                                                    <constraint firstItem="rTp-6g-s0g" firstAttribute="leading" secondItem="h4z-3m-gH3" secondAttribute="leading" id="nDi-5v-hWa"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hl-P7-fel" customClass="ActionLabel" customModule="instagram" customModuleProvider="target">
+                                                <rect key="frame" x="12.999999999999998" y="58.666666666666693" width="29.333333333333329" height="20.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="zHa-3X-FFK"/>
+                                            <constraint firstAttribute="height" constant="79" id="zb9-8F-3OE"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ft0-P0-J9R">
+                                        <rect key="frame" x="91.333333333333329" y="0.0" width="54.999999999999986" height="79"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fnu-i5-bUm" customClass="NeomorphView" customModule="instagram" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwF-HS-Bph">
+                                                        <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="receive-ic"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="nwF-HS-Bph" secondAttribute="bottom" id="20C-5D-QbI"/>
+                                                    <constraint firstAttribute="height" constant="55" id="Kng-Wo-GxZ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="nwF-HS-Bph" secondAttribute="trailing" id="Y79-1j-euQ"/>
+                                                    <constraint firstAttribute="width" constant="55" id="ff0-H8-7ul"/>
+                                                    <constraint firstItem="nwF-HS-Bph" firstAttribute="leading" secondItem="Fnu-i5-bUm" secondAttribute="leading" id="hEe-mC-WUM"/>
+                                                    <constraint firstItem="nwF-HS-Bph" firstAttribute="top" secondItem="Fnu-i5-bUm" secondAttribute="top" id="zBF-Vg-oEc"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pl-Uu-ze9" customClass="ActionLabel" customModule="instagram" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="58.666666666666693" width="55" height="20.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="Vea-U6-Us4"/>
+                                            <constraint firstAttribute="height" constant="79" id="XXw-FG-84x"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XzN-Nj-QVP">
+                                        <rect key="frame" x="182.66666666666666" y="0.0" width="55" height="79"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zbU-NI-cGT" customClass="NeomorphView" customModule="instagram" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I98-sn-2wT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="swap-ic"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="55" id="Ltw-78-yNd"/>
+                                                    <constraint firstItem="I98-sn-2wT" firstAttribute="leading" secondItem="zbU-NI-cGT" secondAttribute="leading" id="N2l-Fm-Zta"/>
+                                                    <constraint firstItem="I98-sn-2wT" firstAttribute="top" secondItem="zbU-NI-cGT" secondAttribute="top" id="T5b-Sp-Bwz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="I98-sn-2wT" secondAttribute="trailing" id="YCb-CE-019"/>
+                                                    <constraint firstAttribute="bottom" secondItem="I98-sn-2wT" secondAttribute="bottom" id="bsv-j3-sDI"/>
+                                                    <constraint firstAttribute="height" constant="55" id="eAZ-Lv-gsO"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhz-9e-rl2" customClass="ActionLabel" customModule="instagram" customModuleProvider="target">
+                                                <rect key="frame" x="6.6666666666666856" y="58.666666666666693" width="42" height="20.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="79" id="YBz-yD-xrm"/>
+                                            <constraint firstAttribute="width" constant="55" id="qbv-Ct-xC6"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MJy-fM-qYx">
+                                        <rect key="frame" x="274" y="0.0" width="55" height="79"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vnx-xH-6XW" customClass="NeomorphView" customModule="instagram" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dut-zD-klD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="send-ic"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="dut-zD-klD" firstAttribute="leading" secondItem="Vnx-xH-6XW" secondAttribute="leading" id="5bJ-pI-feF"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dut-zD-klD" secondAttribute="trailing" id="9if-Cg-UBp"/>
+                                                    <constraint firstItem="dut-zD-klD" firstAttribute="top" secondItem="Vnx-xH-6XW" secondAttribute="top" id="MCF-Jq-QLq"/>
+                                                    <constraint firstAttribute="height" constant="55" id="SM2-sC-709"/>
+                                                    <constraint firstAttribute="width" constant="55" id="ngD-W3-HqI"/>
+                                                    <constraint firstAttribute="bottom" secondItem="dut-zD-klD" secondAttribute="bottom" id="vlu-0p-lS2"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bii-dG-pZM" customClass="ActionLabel" customModule="instagram" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="58.666666666666693" width="39.333333333333336" height="20.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="m62-cx-CDb"/>
+                                            <constraint firstAttribute="height" constant="79" id="vHE-AB-qud"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="7jD-OO-B20"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="coz-UU-p5P">
+                                <rect key="frame" x="32" y="386" width="329" height="20"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="YCP-11-S8B">
+                                        <rect key="frame" x="0.0" y="0.0" width="174" height="20"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="history-ic" translatesAutoresizingMaskIntoConstraints="NO" id="QuV-Ta-TRG">
+                                                <rect key="frame" x="0.0" y="1" width="20" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="5C0-aC-LOG"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhv-7F-T1a">
+                                                <rect key="frame" x="26" y="0.0" width="148" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137254901963" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Fk-Rf-t7W">
+                                        <rect key="frame" x="255" y="0.0" width="74" height="20"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="See all"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="mQS-h0-5Gi"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="chd-28-Eln"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.040698504579077262" green="0.51627106775048603" blue="0.55495256185531616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Vo8-Ar-Kpd" secondAttribute="trailing" constant="24" id="08Y-cQ-hlD"/>
+                            <constraint firstItem="coz-UU-p5P" firstAttribute="leading" secondItem="wMc-IN-SB9" secondAttribute="leadingMargin" constant="16" id="25j-Kn-BEQ"/>
+                            <constraint firstItem="5Tq-De-gIW" firstAttribute="leading" secondItem="wMc-IN-SB9" secondAttribute="leadingMargin" constant="16" id="3T2-rM-2HI"/>
+                            <constraint firstItem="5Tq-De-gIW" firstAttribute="top" secondItem="Vo8-Ar-Kpd" secondAttribute="bottom" constant="24" id="7hC-ab-FiN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="coz-UU-p5P" secondAttribute="trailing" constant="16" id="Idx-2a-cQU"/>
                             <constraint firstItem="Vo8-Ar-Kpd" firstAttribute="leading" secondItem="wMc-IN-SB9" secondAttribute="leadingMargin" constant="24" id="UhK-Ps-6Si"/>
+                            <constraint firstItem="coz-UU-p5P" firstAttribute="top" secondItem="5Tq-De-gIW" secondAttribute="bottom" constant="24" id="u5I-7b-70E"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Tq-De-gIW" secondAttribute="trailing" constant="16" id="uOv-mU-ORX"/>
                             <constraint firstItem="Vo8-Ar-Kpd" firstAttribute="top" secondItem="wMc-IN-SB9" secondAttribute="topMargin" constant="10" id="vWH-6i-rc6"/>
                         </constraints>
                     </view>
@@ -119,6 +307,8 @@
                         <outlet property="address" destination="bXe-tj-zRU" id="F1Q-Yg-AYU"/>
                         <outlet property="balance" destination="kDc-uD-d4Z" id="sxi-Cf-yiY"/>
                         <outlet property="hideBalance" destination="HW5-7I-LQt" id="0vo-vm-Lud"/>
+                        <outlet property="history" destination="Zhv-7F-T1a" id="Kcb-PC-TNe"/>
+                        <outlet property="seeAll" destination="5Fk-Rf-t7W" id="64x-Qc-2Bl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49w-1q-tSj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -260,13 +450,21 @@
     </scenes>
     <resources>
         <image name="bell" catalog="system" width="125" height="128"/>
+        <image name="buy-ic" width="24" height="24"/>
         <image name="camera" catalog="system" width="128" height="93"/>
         <image name="eye-ic" width="14.333333015441895" height="14"/>
         <image name="globe" catalog="system" width="128" height="123"/>
+        <image name="history-ic" width="18" height="18"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="person" catalog="system" width="128" height="121"/>
+        <image name="receive-ic" width="24" height="24"/>
+        <image name="send-ic" width="24" height="24"/>
+        <image name="swap-ic" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
