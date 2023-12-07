@@ -105,7 +105,7 @@
                                     <constraint firstItem="kDc-uD-d4Z" firstAttribute="centerX" secondItem="Vo8-Ar-Kpd" secondAttribute="centerX" id="uq6-VS-lsn"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5Tq-De-gIW">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5Tq-De-gIW" userLabel="Action-Stack">
                                 <rect key="frame" x="32" y="283" width="329" height="79"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="feN-dO-vfd">
@@ -255,7 +255,7 @@
                                     <constraint firstAttribute="height" constant="79" id="7jD-OO-B20"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="coz-UU-p5P">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="coz-UU-p5P" userLabel="Trasaction-Stack">
                                 <rect key="frame" x="32" y="386" width="329" height="20"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="YCP-11-S8B">
@@ -287,6 +287,10 @@
                                     <constraint firstAttribute="height" constant="20" id="mQS-h0-5Gi"/>
                                 </constraints>
                             </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Pbw-Bn-QvI" userLabel="History-Render">
+                                <rect key="frame" x="16" y="408" width="361" height="359"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="chd-28-Eln"/>
                         <color key="backgroundColor" red="0.040698504579077262" green="0.51627106775048603" blue="0.55495256185531616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -295,8 +299,12 @@
                             <constraint firstItem="coz-UU-p5P" firstAttribute="leading" secondItem="wMc-IN-SB9" secondAttribute="leadingMargin" constant="16" id="25j-Kn-BEQ"/>
                             <constraint firstItem="5Tq-De-gIW" firstAttribute="leading" secondItem="wMc-IN-SB9" secondAttribute="leadingMargin" constant="16" id="3T2-rM-2HI"/>
                             <constraint firstItem="5Tq-De-gIW" firstAttribute="top" secondItem="Vo8-Ar-Kpd" secondAttribute="bottom" constant="24" id="7hC-ab-FiN"/>
+                            <constraint firstItem="Pbw-Bn-QvI" firstAttribute="top" secondItem="coz-UU-p5P" secondAttribute="bottom" constant="2" id="CnD-Z8-NYL"/>
+                            <constraint firstItem="chd-28-Eln" firstAttribute="trailing" secondItem="Pbw-Bn-QvI" secondAttribute="trailing" constant="16" id="Epb-lS-GdV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="coz-UU-p5P" secondAttribute="trailing" constant="16" id="Idx-2a-cQU"/>
                             <constraint firstItem="Vo8-Ar-Kpd" firstAttribute="leading" secondItem="wMc-IN-SB9" secondAttribute="leadingMargin" constant="24" id="UhK-Ps-6Si"/>
+                            <constraint firstItem="Pbw-Bn-QvI" firstAttribute="leading" secondItem="chd-28-Eln" secondAttribute="leading" constant="16" id="qYW-jY-mpo"/>
+                            <constraint firstItem="chd-28-Eln" firstAttribute="bottom" secondItem="Pbw-Bn-QvI" secondAttribute="bottom" constant="2" id="tMI-dy-iRr"/>
                             <constraint firstItem="coz-UU-p5P" firstAttribute="top" secondItem="5Tq-De-gIW" secondAttribute="bottom" constant="24" id="u5I-7b-70E"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5Tq-De-gIW" secondAttribute="trailing" constant="16" id="uOv-mU-ORX"/>
                             <constraint firstItem="Vo8-Ar-Kpd" firstAttribute="top" secondItem="wMc-IN-SB9" secondAttribute="topMargin" constant="10" id="vWH-6i-rc6"/>
@@ -309,6 +317,7 @@
                         <outlet property="hideBalance" destination="HW5-7I-LQt" id="0vo-vm-Lud"/>
                         <outlet property="history" destination="Zhv-7F-T1a" id="Kcb-PC-TNe"/>
                         <outlet property="seeAll" destination="5Fk-Rf-t7W" id="64x-Qc-2Bl"/>
+                        <outlet property="tableView" destination="Pbw-Bn-QvI" id="Ydz-GT-bQ2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49w-1q-tSj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D07FA982B21579200A18B13 /* HistoryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D07FA962B21579200A18B13 /* HistoryTableCell.swift */; };
+		9D07FA992B21579200A18B13 /* HistoryTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D07FA972B21579200A18B13 /* HistoryTableCell.xib */; };
 		9D2B7B232B18ECC4003097AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B7B222B18ECC4003097AA /* AppDelegate.swift */; };
 		9D2B7B252B18ECC4003097AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B7B242B18ECC4003097AA /* SceneDelegate.swift */; };
 		9D2B7B272B18ECC4003097AA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B7B262B18ECC4003097AA /* HomeViewController.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D07FA962B21579200A18B13 /* HistoryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableCell.swift; sourceTree = "<group>"; };
+		9D07FA972B21579200A18B13 /* HistoryTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableCell.xib; sourceTree = "<group>"; };
 		9D2B7B1F2B18ECC4003097AA /* instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2B7B222B18ECC4003097AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D2B7B242B18ECC4003097AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D07FA922B2156F400A18B13 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				9D07FA972B21579200A18B13 /* HistoryTableCell.xib */,
+				9D07FA962B21579200A18B13 /* HistoryTableCell.swift */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
 		9D2B7B162B18ECC4003097AA = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +85,7 @@
 		9D2B7B212B18ECC4003097AA /* instagram */ = {
 			isa = PBXGroup;
 			children = (
+				9D07FA922B2156F400A18B13 /* Xibs */,
 				9D2B7B392B18ECEB003097AA /* Resources */,
 				9D2B7B382B18ECE2003097AA /* Controller */,
 				9D2B7B372B18ECDB003097AA /* View */,
@@ -208,6 +222,7 @@
 				9D2B7B2F2B18ECC5003097AA /* LaunchScreen.storyboard in Resources */,
 				9D2B7B2C2B18ECC5003097AA /* Assets.xcassets in Resources */,
 				9D2B7B2A2B18ECC4003097AA /* Main.storyboard in Resources */,
+				9D07FA992B21579200A18B13 /* HistoryTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +236,7 @@
 				9D2B7B3C2B18F441003097AA /* ExploreViewController.swift in Sources */,
 				9D4819BB2B1B22FD0015EEA1 /* Colors.swift in Sources */,
 				9DF8A8262B1F91C6006B0021 /* ActionLabel.swift in Sources */,
+				9D07FA982B21579200A18B13 /* HistoryTableCell.swift in Sources */,
 				9D2B7B3E2B18F45B003097AA /* CameraViewController.swift in Sources */,
 				9D4819B92B1B1ACA0015EEA1 /* AmountView.swift in Sources */,
 				9D2B7B402B18F471003097AA /* NotificationViewController.swift in Sources */,
