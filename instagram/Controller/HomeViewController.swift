@@ -31,6 +31,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.register(nib, forCellReuseIdentifier: "HistoryTableCell");
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.backgroundColor = Colors.shark
+        tableView.showsVerticalScrollIndicator = false
+        tableView.allowsSelection = false
+        tableView.separatorColor = Colors.silver
     }
     
     private func commitInit() {
