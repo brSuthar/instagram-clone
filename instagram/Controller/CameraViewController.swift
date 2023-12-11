@@ -8,11 +8,15 @@
 import UIKit
 
 class CameraViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func changeText(_ sender: UITextField) {
+        print("Data chnagedasdf \(String(describing: sender.text))")
+    }
+    
 }
