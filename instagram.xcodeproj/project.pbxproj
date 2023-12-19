@@ -21,6 +21,9 @@
 		9D2B7B422B18F489003097AA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2B7B412B18F489003097AA /* ProfileViewController.swift */; };
 		9D4819B92B1B1ACA0015EEA1 /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4819B82B1B1ACA0015EEA1 /* AmountView.swift */; };
 		9D4819BB2B1B22FD0015EEA1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4819BA2B1B22FD0015EEA1 /* Colors.swift */; };
+		9D48816E2B2A7F4A00D44364 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D48816D2B2A7F4A00D44364 /* Auth.storyboard */; };
+		9D4881712B2A859600D44364 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4881702B2A859600D44364 /* LoginController.swift */; };
+		9DF32B632B2D3BAC00B1C1A6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF32B622B2D3BAC00B1C1A6 /* RegisterViewController.swift */; };
 		9DF8A8262B1F91C6006B0021 /* ActionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF8A8252B1F91C6006B0021 /* ActionLabel.swift */; };
 		9DFF34AF2B1E3D0E0043466D /* NeomorphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFF34AE2B1E3D0E0043466D /* NeomorphView.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +45,9 @@
 		9D2B7B412B18F489003097AA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9D4819B82B1B1ACA0015EEA1 /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
 		9D4819BA2B1B22FD0015EEA1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		9D48816D2B2A7F4A00D44364 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		9D4881702B2A859600D44364 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		9DF32B622B2D3BAC00B1C1A6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9DF8A8252B1F91C6006B0021 /* ActionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionLabel.swift; sourceTree = "<group>"; };
 		9DFF34AE2B1E3D0E0043466D /* NeomorphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeomorphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +122,7 @@
 		9D2B7B382B18ECE2003097AA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9D48816F2B2A856E00D44364 /* AuthController */,
 				9D2B7B262B18ECC4003097AA /* HomeViewController.swift */,
 				9D2B7B3B2B18F441003097AA /* ExploreViewController.swift */,
 				9D2B7B3D2B18F45B003097AA /* CameraViewController.swift */,
@@ -140,6 +147,7 @@
 			children = (
 				9D2B7B2D2B18ECC5003097AA /* LaunchScreen.storyboard */,
 				9D2B7B282B18ECC4003097AA /* Main.storyboard */,
+				9D48816D2B2A7F4A00D44364 /* Auth.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -151,6 +159,15 @@
 				9DFF34AE2B1E3D0E0043466D /* NeomorphView.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		9D48816F2B2A856E00D44364 /* AuthController */ = {
+			isa = PBXGroup;
+			children = (
+				9D4881702B2A859600D44364 /* LoginController.swift */,
+				9DF32B622B2D3BAC00B1C1A6 /* RegisterViewController.swift */,
+			);
+			path = AuthController;
 			sourceTree = "<group>";
 		};
 		9DF8A8242B1F9186006B0021 /* CustomLabel */ = {
@@ -221,6 +238,7 @@
 			files = (
 				9D2B7B2F2B18ECC5003097AA /* LaunchScreen.storyboard in Resources */,
 				9D2B7B2C2B18ECC5003097AA /* Assets.xcassets in Resources */,
+				9D48816E2B2A7F4A00D44364 /* Auth.storyboard in Resources */,
 				9D2B7B2A2B18ECC4003097AA /* Main.storyboard in Resources */,
 				9D07FA992B21579200A18B13 /* HistoryTableCell.xib in Resources */,
 			);
@@ -236,11 +254,13 @@
 				9D2B7B3C2B18F441003097AA /* ExploreViewController.swift in Sources */,
 				9D4819BB2B1B22FD0015EEA1 /* Colors.swift in Sources */,
 				9DF8A8262B1F91C6006B0021 /* ActionLabel.swift in Sources */,
+				9D4881712B2A859600D44364 /* LoginController.swift in Sources */,
 				9D07FA982B21579200A18B13 /* HistoryTableCell.swift in Sources */,
 				9D2B7B3E2B18F45B003097AA /* CameraViewController.swift in Sources */,
 				9D4819B92B1B1ACA0015EEA1 /* AmountView.swift in Sources */,
 				9D2B7B402B18F471003097AA /* NotificationViewController.swift in Sources */,
 				9D2B7B272B18ECC4003097AA /* HomeViewController.swift in Sources */,
+				9DF32B632B2D3BAC00B1C1A6 /* RegisterViewController.swift in Sources */,
 				9DFF34AF2B1E3D0E0043466D /* NeomorphView.swift in Sources */,
 				9D2B7B422B18F489003097AA /* ProfileViewController.swift in Sources */,
 				9D2B7B232B18ECC4003097AA /* AppDelegate.swift in Sources */,

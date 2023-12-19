@@ -7,6 +7,7 @@ class Colors {
     static let alab: UIColor = UIColor(hex: "#FCFCFC")
     static let tundora: UIColor = UIColor(hex: "#494949")
     static let shark_lite: UIColor = UIColor(hex: "#303234")
+    static let radiance: UIColor = UIColor(hex: "#1877F2")
     
     //text colors
     static let silver: UIColor = UIColor(hex: "#CCCCCC")
